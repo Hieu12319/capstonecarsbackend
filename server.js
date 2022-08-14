@@ -67,7 +67,7 @@ app.delete("/cars/:id", async (req, res) => {
 })
 
 //cars update
-app.put("cars/:id", async (req, res) => {
+app.put("/cars/:id", async (req, res) => {
     try {
         res.json(
             await Cars.findByIdAndUpdate(req.params.id, req.body, {new: true})
