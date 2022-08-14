@@ -41,11 +41,12 @@ app.get("/", (req, res) => {
 })
 // index cars
 app.get("/cars", async (req, res) => {
-    try{
-        res.json(await Cars.find({}))
-    } catch (error) {
-        res.status(400).json(error)
-    }
+    // try{
+    //     res.json(await Cars.find({}))
+    // } catch (error) {
+    //     res.status(400).json(error)
+    // }
+    res.send("cars2")
 })
 
 //cars create
