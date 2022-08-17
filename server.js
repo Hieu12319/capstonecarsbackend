@@ -26,6 +26,7 @@ const CarsSchema = new mongoose.Schema({
     price: String,
     description: String,
     contact: String,
+  
 })
 
 const Cars = mongoose.model("Cars", CarsSchema)
